@@ -488,8 +488,8 @@
               </div>
               <div class="contact-form w-form">
                 <form data-name="Get In Touch Form" name="wf-form-Get-In-Touch-Form" method="post" action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSe6PNnZ_UTbB7fbAKDO7vI6pT7lu5dB1KDxYS0qzdxSFx44hg/formResponse" class="get-in-touch-form"><label for="entry.">Name</label><input type="text" class="text-field cc-contact-field w-input" maxlength="256" name="entry.2005620554" data-name="entry.2005620554" placeholder="Enter your name" id="entry." required=""><label for="entry.-2">Email Address</label><input type="email" class="text-field cc-contact-field w-input" maxlength="256" name="entry.1045781291" data-name="entry.1045781291" placeholder="Enter your email" id="entry.-2"><label for="entry.-3">Mobile Number</label><input type="tel" class="text-field cc-contact-field w-input" maxlength="256" name="entry.1166974658" data-name="entry.1166974658" placeholder="Enter your mobile number" id="entry.-3" required="">
-                  <div class="g-recaptcha" data-sitekey="6Lfw6qoUAAAAAJSwqR1DOEO0OwErL54FLp0nJqzV"  data-callback="enableBtn" style="padding-bottom: 20px;"></div>
-                  <input type="submit" value="Submit" data-wait="Please wait..." class="button w-button"></form>
+                  <div class="g-recaptcha" data-sitekey="6Lfw6qoUAAAAAJSwqR1DOEO0OwErL54FLp0nJqzV"  data-callback="enableBtn" style="padding-bottom: 20px;"></div><br/>
+                  <input type="submit" value="Submit" data-wait="Please wait..." id="submitButton" class="button w-button"></form>
                 <div class="status-message cc-success-message w-form-done">
                   <div>Thank you! Your submission has been received!</div>
                 </div>
@@ -537,5 +537,11 @@
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <script src="https://apps.elfsight.com/p/platform.js" defer=""></script>
+  <script>
+  document.getElementById("submitButton").disabled = true;
+  function enableBtn(){
+    document.getElementById("submitButton").disabled = false;
+   }
+  </script>
 </body>
 </html>
