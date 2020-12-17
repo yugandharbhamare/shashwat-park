@@ -735,7 +735,7 @@ figcaption {
 }
 
 .heading {
-  margin-top: 0px;
+  margin-top: 40px;
   margin-bottom: 40px;
   color: #b24637;
   font-weight: 700;
@@ -918,6 +918,32 @@ figcaption {
 
 .text-span-4 {
   color: red;
+}
+
+.wa-chat {
+  position: fixed;
+  left: auto;
+  top: auto;
+  right: 30px;
+  bottom: 50px;
+  z-index: 5000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 16px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.23);
+}
+
+.chat {
+  display: inline;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 991px) {
